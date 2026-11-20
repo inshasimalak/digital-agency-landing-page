@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="وكالة مدار للتسويق الرقمي: تصميم جرافيك، تطوير مواقع، إدارة سوشيال ميديا وإعلانات مدفوعة للشركات.">
+  <title>مدار | وكالة تسويق رقمي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- رابط تخطي يسمح لمستخدمي لوحة المفاتيح بالقفز إلى المحتوى مباشرة -->
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- ===================== شريط التنقل العلوي ===================== -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="التنقل الرئيسي">
+      <a href="#home" class="logo" aria-label="مدار - الصفحة الرئيسية">
+        <span class="logo-mark" aria-hidden="true">م</span>
+        <span class="logo-text">مدار</span>
+      </a>
+
+      <!-- زر قائمة الهمبرغر (يظهر على الجوال فقط) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="فتح القائمة">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">الرئيسية</a></li>
+        <li><a href="#services" class="nav-link">خدماتنا</a></li>
+        <li><a href="#portfolio" class="nav-link">أعمالنا</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+        <li><a href="#contact" class="btn btn-small nav-cta">ابدأ مشروعك</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== القسم الرئيسي (Hero) ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">وكالة تسويق رقمي للشركات</p>
+          <h1 id="hero-title">نحوّل علامتك التجارية إلى <span class="highlight">قصة نجاح رقمية</span></h1>
+          <p class="hero-text">
+            نصمّم هويتك، نبني موقعك، وندير حملاتك الإعلانية بخطة واضحة ونتائج قابلة للقياس.
+            فريق واحد لكل ما تحتاجه شركتك للنمو على الإنترنت.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">احصل على استشارة مجانية</a>
+            <a href="#portfolio" class="btn btn-ghost">شاهد أعمالنا</a>
+          </div>
+          <!-- أرقام تعريفية سريعة -->
+          <ul class="hero-stats" aria-label="أرقام عن الوكالة">
+            <li><strong dir="ltr">+120</strong><span>مشروع منجز</span></li>
+            <li><strong dir="ltr">+60</strong><span>عميل سعيد</span></li>
+            <li><strong dir="ltr">8</strong><span>سنوات خبرة</span></li>
+          </ul>
+        </div>
+
+        <!-- رسم زخرفي مضمّن بصيغة SVG (لا يحتاج إنترنت) -->
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7c5cff"/>
+                <stop offset="1" stop-color="#00c2a8"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="url(#g1)" stroke-width="2" stroke-dasharray="6 10"/>
+            <circle cx="200" cy="200" r="95" fill="url(#g1)" opacity=".9"/>
+            <circle cx="350" cy="200" r="18" fill="#ffb547"/>
+            <circle cx="95" cy="95" r="12" fill="#00c2a8"/>
+            <circle cx="120" cy="330" r="22" fill="#7c5cff" opacity=".7"/>
+            <rect x="165" y="165" width="70" height="70" rx="16" fill="#fff" opacity=".9"/>
+            <path d="M182 215 l18 -30 l18 30 z" fill="#7c5cff"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== الخدمات ===================== -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">ماذا نقدّم</p>
+          <h2 id="services-title">خدماتنا</h2>
+          <p class="section-sub">حلول متكاملة تغطي كل مراحل حضورك الرقمي، من الفكرة حتى النتائج.</p>
+        </header>
+
+        <!-- لإضافة خدمة جديدة: انسخ عنصر <article class="service-card"> كاملاً وعدّل الأيقونة والنص -->
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1-.3-.3-.4-.6-.4-1 0-.8.7-1.5 1.5-1.5H16a5 5 0 0 0 5-5c0-4.4-4-8-9-8zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </div>
+            <h3>تصميم جرافيك</h3>
+            <p>هويات بصرية، شعارات، ومطبوعات تعكس شخصية علامتك وتبقى في ذاكرة العميل.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 4v10h16V8H4zm4.6 2.4L6 13l2.6 2.6 1.4-1.4L8.8 13l1.2-1.2-1.4-1.4zm6.8 0-1.4 1.4 1.2 1.2-1.2 1.2 1.4 1.4L18 13l-2.6-2.6z"/></svg>
+            </div>
+            <h3>تطوير مواقع</h3>
+            <p>مواقع سريعة ومتجاوبة مع كل الشاشات، مبنية لتحويل الزوار إلى عملاء.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M18 16a3 3 0 0 0-2.2 1l-7-3.5a3 3 0 0 0 0-1l7-3.5A3 3 0 1 0 15 7l-7 3.5a3 3 0 1 0 0 3L15 17a3 3 0 1 0 3-1z"/></svg>
+            </div>
+            <h3>إدارة سوشيال ميديا</h3>
+            <p>خطة محتوى شهرية، تصميم منشورات، وتفاعل يومي يبني مجتمعاً حول علامتك.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 13h2v7H3v-7zm4-4h2v11H7V9zm4 3h2v8h-2v-8zm4-6h2v14h-2V6zm4 3h2v11h-2V9z"/></svg>
+            </div>
+            <h3>إعلانات مدفوعة</h3>
+            <p>حملات مستهدفة على محركات البحث ومنصات التواصل بميزانية مدروسة وعائد واضح.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+            </div>
+            <h3>تحسين محركات البحث</h3>
+            <p>نرفع ترتيب موقعك في نتائج البحث لتصل إلى عملائك دون أن تدفع ثمن كل نقرة.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4V4zm0 4h10v2H4V8zm0 4h16v2H4v-2zm0 4h10v2H4v-2z"/></svg>
+            </div>
+            <h3>كتابة المحتوى</h3>
+            <p>نصوص تسويقية ومقالات ومحتوى مواقع بلغة عربية سليمة تخاطب جمهورك بوضوح.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== معرض الأعمال ===================== -->
+    <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">من أعمالنا</p>
+          <h2 id="portfolio-title">معرض الأعمال</h2>
+          <p class="section-sub">نماذج مختارة من مشاريع نفّذناها لعملائنا.</p>
+        </header>
+
+        <!-- أزرار التصفية: قيمة data-filter يجب أن تطابق data-category في بطاقات المشاريع -->
+        <div class="filters" role="group" aria-label="تصفية المشاريع حسب النوع">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">الكل</button>
+          <button type="button" class="filter-btn" data-filter="graphic" aria-pressed="false">جرافيك</button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">ويب</button>
+          <button type="button" class="filter-btn" data-filter="js" aria-pressed="false">جافا سكريبت</button>
+        </div>
+
+        <!-- لإضافة مشروع جديد: انسخ عنصر <article class="project-card"> وغيّر data-category والصورة والنص.
+             الصور في مجلد images/ بمقاس 800×500 (نسبة 16:10)، من Unsplash برخصة مجانية -->
+        <div class="portfolio-grid" aria-live="polite">
+          <article class="project-card" data-category="graphic">
+            <img class="project-thumb" src="images/cafe-branding.jpg" alt="شخصان يرفعان فنجاني قهوة لاتيه برسوم على الرغوة فوق طاولة خشبية"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <div class="project-body">
+              <span class="tag">جرافيك</span>
+              <h3>هوية مقهى «حَبّة»</h3>
+              <p>شعار، ألوان، وتغليف كامل لسلسلة مقاهٍ محلية.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <img class="project-thumb" src="images/craft-store.jpg" alt="موقع إلكتروني معروض على شاشة حاسوب وجهاز لوحي وهاتف على مكتب"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <div class="project-body">
+              <span class="tag">ويب</span>
+              <h3>متجر «سوق الحرف»</h3>
+              <p>متجر إلكتروني متجاوب لبيع المنتجات اليدوية.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="js">
+            <img class="project-thumb" src="images/sales-dashboard.jpg" alt="شاشة حاسوب تعرض لوحة بيانات برسوم بيانية للأعمدة والخطوط"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <div class="project-body">
+              <span class="tag">جافا سكريبت</span>
+              <h3>لوحة مبيعات تفاعلية</h3>
+              <p>لوحة تحكم تعرض مؤشرات الأداء لحظياً بجافا سكريبت.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="graphic">
+            <img class="project-thumb" src="images/summer-campaign.jpg" alt="هاتف ذكي على مكتب أبيض يعرض شبكة منشورات مصورة"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <div class="project-body">
+              <span class="tag">جرافيك</span>
+              <h3>حملة «صيف أخضر»</h3>
+              <p>تصاميم منشورات وقصص لحملة موسمية على إنستغرام.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <img class="project-thumb" src="images/namaa-landing.jpg" alt="مصمم يعمل على شاشتين تعرضان الكود وتصميم أزرار الموقع"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <div class="project-body">
+              <span class="tag">ويب</span>
+              <h3>صفحة هبوط «نماء»</h3>
+              <p>صفحة إطلاق لتطبيق مالي ناشئ رفعت التسجيلات 40%.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="js">
+            <img class="project-thumb" src="images/tasks-app.jpg" alt="حاسوب محمول على مكتب يعرض كود جافا سكريبت في محرر نصوص"
+                 width="800" height="500" loading="lazy" decoding="async">
+            <div class="project-body">
+              <span class="tag">جافا سكريبت</span>
+              <h3>تطبيق «مهامي»</h3>
+              <p>تطبيق ويب لإدارة المهام يحفظ البيانات في المتصفح.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== نموذج التواصل ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <header class="section-head contact-head">
+          <p class="eyebrow">لنعمل معاً</p>
+          <h2 id="contact-title">تواصل معنا</h2>
+          <p class="section-sub">أخبرنا عن مشروعك وسنعود إليك خلال يوم عمل واحد.</p>
+        </header>
+
+        <!-- novalidate: نعطّل رسائل المتصفح الافتراضية ونستخدم تحققاً مخصصاً بالعربية -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">الاسم الكامل <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="error-msg" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">البريد الإلكتروني <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" dir="ltr" required aria-describedby="email-error">
+            <p class="error-msg" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">الموضوع <span aria-hidden="true">*</span></label>
+            <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+            <p class="error-msg" id="subject-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">الرسالة <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required minlength="20" aria-describedby="message-hint message-error"></textarea>
+            <p class="field-hint" id="message-hint">20 حرفاً على الأقل.</p>
+            <p class="error-msg" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+
+          <!-- رسالة النجاح: مخفية حتى يتم الإرسال بنجاح -->
+          <p class="form-success" id="form-success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== التذييل ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#home" class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">م</span>
+          <span class="logo-text">مدار</span>
+        </a>
+        <p>وكالة تسويق رقمي تساعد الشركات على النمو بتصميم ذكي وحملات مدروسة.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="روابط سريعة">
+        <h2 class="footer-title">روابط سريعة</h2>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#portfolio">أعمالنا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-title">معلومات التواصل</h2>
+        <!-- بيانات وهمية للعرض فقط: استبدلها ببيانات حقيقية -->
+        <address>
+          <ul>
+            <li>العنوان: شارع المثال 123، مدينة وهمية</li>
+            <li>الهاتف: <a href="tel:+000000000000" dir="ltr">+000 000 000 000</a></li>
+            <li>البريد: <a href="mailto:hello@example.com" dir="ltr">hello@example.com</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <p class="copyright container">© <span id="year">2026</span> وكالة مدار (اسم وهمي). جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
